@@ -3,7 +3,6 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { CSSProperties } from "react";
-import { ContentCard } from "@/components/ContentCard";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -44,14 +43,7 @@ const RootLayout = ({
         style={customBackgroundStyles}
       >
         <Navbar />
-        <div className="m-9 flex gap-4">
-          <div className="basis-2/3">
-            <ContentCard>{children}</ContentCard>
-          </div>
-          <div className="basis-1/3">
-            <ContentCard>Side content</ContentCard>
-          </div>
-        </div>
+        <div className="m-9 flex gap-4">{children}</div>
       </body>
     </html>
   );

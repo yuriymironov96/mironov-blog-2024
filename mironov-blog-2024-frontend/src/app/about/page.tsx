@@ -1,7 +1,9 @@
+import { ContentCard } from "@/components/ContentCard";
+
 export default function About() {
-    return (
-        <div>
-            Really simple page about me.
-        </div>
-    )
+  return (
+    <div className="w-full">
+      <ContentCard>Really simple page about me.</ContentCard>
+    </div>
+  );
 }
